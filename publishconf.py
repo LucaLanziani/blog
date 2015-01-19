@@ -22,3 +22,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = 'UA-49600587-1'
+PROFILE_IMG_URL = SITEURL + '/images/minime.jpg'
+COVER_IMG_URL = SITEURL + '/images/london.jpg'
+USER_LOGO_URL = SITEURL + '/images/minime.jpg'
