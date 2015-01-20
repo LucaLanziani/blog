@@ -21,8 +21,8 @@ AUTHOR_FEED_RSS = None
 THEME = "/home/lucalanziani/code/pelican-themes/pure"
 
 PLUGIN_PATHS = ['/home/lucalanziani/code/pelican-plugins']
-PLUGINS = ['gravatar', 'series', 'liquid_tags.img', 'liquid_tags.video',
-           'liquid_tags.youtube', 'liquid_tags.vimeo',
+PLUGINS = ['gravatar', 'series', 'sitemap', 'liquid_tags.img',
+           'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.vimeo',
            'liquid_tags.include_code', 'liquid_tags.notebook', 'pelican_gist']
 
 # Blogroll
@@ -35,13 +35,26 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('github', 'https://github.com/Nss'),
           ('twitter', 'http://twitter.com/_Nss_'),
           ('linkedin', 'http://uk.linkedin.com/in/lucalanziani/'),
-          ('envelope', 'mailto:luca.lanziani+site@gmail.com')
-          )
+          ('envelope', 'mailto:luca.lanziani+site@gmail.com'),)
 
 DEFAULT_PAGINATION = 3
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 PROFILE_IMG_URL = SITEURL + '/images/minime.jpg'
 COVER_IMG_URL = SITEURL + '/images/london.jpg'
