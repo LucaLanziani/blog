@@ -18,9 +18,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-THEME = "/home/lucalanziani/code/pelican-themes/pure"
 
-PLUGIN_PATHS = ['/home/lucalanziani/code/pelican-plugins']
+THEME = "./pelican-themes/pure"
+
+PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['gravatar', 'series', 'sitemap', 'liquid_tags.img',
            'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.vimeo',
            'liquid_tags.include_code', 'liquid_tags.notebook', 'pelican_gist']
