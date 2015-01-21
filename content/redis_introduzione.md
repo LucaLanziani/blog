@@ -1,4 +1,4 @@
-Title: [Ita] Redisjs - introduzione
+Title: [Ita] Redis - introduzione
 Date: 2012-04-17 18:45
 Category: Tutorial
 Tags: Nodejs, it
