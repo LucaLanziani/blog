@@ -2,12 +2,12 @@
 {% block title %}{{ article.title|striptags }} // {{ super() }}{% endblock title %}
 
 {% block head_js %}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<!--     <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
     <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script>
+    </script> -->
 {% endblock %}
 
 {% block content %}
@@ -28,7 +28,7 @@
             </hgroup>
         </header>
     </div>
-    <div class="pure-u">
+    <div class="pure-u-1">
         <div class="content">
             <section class="post">
                 <header class="post-header">
@@ -39,8 +39,44 @@
                             {% endfor %}
                         </p>
                 </header>
+                {{ article.content }}
             </section>
-            {{ article.content }}
+
+            {% if (article.next_article or article.prev_article) %}
+                <div class="pagination-wrapper content-subhead">
+                    <div class="pagination">
+                        <div class="pagination-left">
+                            {% if article.next_article %}
+                                <a href="{{ SITEURL }}/{{ article.next_article.url}}"><span>&larr; Newer post</span></a>
+                            {% else %}
+                                &nbsp;
+                            {% endif %}
+                        </div>
+                        <span> navitage </span>
+                        <div class="pagination-right">
+                            {% if article.prev_article %}
+                                <a href="{{ SITEURL }}/{{ article.prev_article.url}}">Older post&nbsp;&rarr;</a>
+                            {% else %}
+                                &nbsp;
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+            {% if article.related_posts %}
+            <div>
+                <dl>
+                    <dt>Related Articles</dt>
+                    <dd>
+                        <ul>
+                        {% for related_post in article.related_posts %}
+                            <li><a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            {% endif %}
             <div class="hr"></div>
             <a href="#" class="go-top">Go Top</a>
             {% if DISQUS_SITENAME %}

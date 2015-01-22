@@ -60,4 +60,14 @@ SITEMAP = {
 PROFILE_IMG_URL = SITEURL + '/images/minime.jpg'
 COVER_IMG_URL = SITEURL + '/images/london.jpg'
 USER_LOGO_URL = SITEURL + '/images/minime.jpg'
-TAGLINE = "Software engineer, linux addict, hacker as http://bit.ly/hacker_def"
+
+TAGLINE = ('Software engineer, linux addict, '
+           'hacker as http://bit.ly/hacker_def, '
+           'InnovAction Lab alumnus')
+
+TAGLINE_HTML = ('Software engineer, linux addict, '
+                'hacker as <a href="http://bit.ly/hacker_def">'
+                'hacker_def</a>, '
+                '<a href="http://www.innovactionlab.org/">InnovAction Lab</a> '
+                'alumnus')
+
