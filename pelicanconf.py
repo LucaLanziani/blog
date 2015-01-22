@@ -22,15 +22,13 @@ AUTHOR_FEED_RSS = None
 THEME = "./pelican-themes/pure"
 
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['gravatar', 'series', 'sitemap', 'liquid_tags.img',
-           'liquid_tags.video', 'liquid_tags.youtube', 'liquid_tags.vimeo',
-           'liquid_tags.include_code', 'liquid_tags.notebook', 'pelican_gist']
+PLUGINS = ['gravatar', 'series', 'sitemap', 'related_posts', 'neighbors',
+           'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
+           'liquid_tags.vimeo', 'liquid_tags.include_code',
+           'liquid_tags.notebook', 'pelican_gist']
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/Nss'),
