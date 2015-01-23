@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import sys
+from pelican.settings import DEFAULT_CONFIG
 
 AUTHOR = u'Luca Lanziani'
 SITENAME = u'Luca Lanziani'
-SITEURL = 'http://127.0.0.1:8000'
+SITEURL = 'http://127.0.0.1'
 
 PATH = 'content'
+
 
 TIMEZONE = 'Europe/Rome'
 
@@ -69,3 +72,19 @@ TAGLINE_HTML = ('Software engineer, linux addict, '
                 '<a href="http://www.innovactionlab.org/">InnovAction Lab</a> '
                 'alumnus')
 
+MENUITEMS = (('Experience', 'pages/experience.html'),)
+
+
+BLOG_PREFIX = 'blog/'
+module = sys.modules[__name__]
+# ENTITIES_SETTING
+for entity in ['tag', 'category', 'author', 'article', 'draft']:
+    url_key = "%s_URL" % entity.upper()
+    save_as_key = "%s_SAVE_AS" % entity.upper()
+    setattr(module, url_key, BLOG_PREFIX + DEFAULT_CONFIG[url_key])
+    setattr(module, save_as_key, BLOG_PREFIX + DEFAULT_CONFIG[save_as_key])
+
+# DIRECT_TEMPLATES_SETTING
+for direct_template in DEFAULT_CONFIG['DIRECT_TEMPLATES']:
+    save_as_key = "%s_SAVE_AS" % direct_template.upper()
+    setattr(module, save_as_key, BLOG_PREFIX + '%s.html' % direct_template)
