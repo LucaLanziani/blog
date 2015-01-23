@@ -113,7 +113,7 @@ ifeq ($(TRAVIS_PULL_REQUEST), false)
 	git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
 endif
 
-travis_github_user_pages:
+travis_github_user_pages: publish
 ifeq ($(TRAVIS_PULL_REQUEST), false)
 	ghp-import -n $(OUTPUTDIR)
 	git push -fq https://${GH_TOKEN}@github.com/Nss/nss.github.io.git gh-pages:master > /dev/null
