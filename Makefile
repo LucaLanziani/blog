@@ -1,6 +1,6 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=
+PELICANOPTS=--ignore-cache
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
@@ -108,11 +108,18 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 travis_github: publish
-	@echo $(TRAVIS_PULL_REQUEST)
 ifeq ($(TRAVIS_PULL_REQUEST), false)
 	ghp-import -n $(OUTPUTDIR)
 	git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
 endif
+
+travis_github_user_pages:
+ifeq ($(TRAVIS_PULL_REQUEST), false)
+	ghp-import -n $(OUTPUTDIR)
+	git push -fq https://${GH_TOKEN}@github.com/Nss/nss.github.io.git gh-pages:master > /dev/null
+endif
+
+
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
 

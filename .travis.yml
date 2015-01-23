@@ -1,11 +1,11 @@
 language: python
-branches: 
-  only: 
+branches:
+  only:
   - master
-install: 
+install:
 - pip install pelican ghp-import markdown pelican_gist
-script: 
-- make travis_github
-env: 
-  global: 
+script:
+- make travis_github_user_pages
+env:
+  global:
     secure: FOEnMVj8oVkMFU3d5NuXbxt25ohCDf4LYBotzLuuQKTSbbqK/FbFeyOFm4ghvMGCcoDUGDw+uhvY6n9oQbELI2Gf9o+tnBdO1EHBfAC6/8x8mag7Tvj/ZOM1pGM/j0xaZrXA+rzjgcM/Ga8oJd32BXjemtmkfK8YabjinWI1u80=
