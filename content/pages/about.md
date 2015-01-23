@@ -4,23 +4,19 @@ Email: luca@lanziani.com
 URL:
 save_as: index.html
 
-Hi I'm Luca, an Italian software engineer.
+Hi there, I'm Luca (Nss) Lanziani, a software engineer currently based in Rome, and this is my personal page.
 
-I got my master degree in Computer Engineering in 2010, from these studies I learned how to approach problems academically but I never forget to use a pinch of creativity.
+Here you can find some information about me as my previous [experience](pages/experience.html) and some of the [blog](blog/) posts I wrote (hopefully I'll write something) during this years.
 
-I always have really hard time leaving problems unsolved,I'm an Open source addict, I'm glad to share knowledge and I will never get tired of learning new things.
+Here a short recap of my last experience: __Betting platform__ as Software Engineer and DevOps (Python / Javascript), sync and backup multi-platform client (Python / wx), Web Components Platform (HTML5, Javascript, css), plugin systems and communication bus on Linux Embedded (C / libdl / pubsub).
 
-Last experience: __Betting platform__ as Software Engineer and DevOps (Python / Javascript), sync and backup multi-platform client (Python / wx), Web Components Platform (HTML5, Javascript, css), plugin systems and communication bus on Linux Embedded (C / libdl / pubsub).
-
-Skills
-======
+And a list of my current skills
 
 <dl class="dl-horizontal">
 	<dt>Os</dt>
 	<dd>
 	  <span class="label label-info">Linux</span>
 	  <span class="label label-info">Osx</span>
-	  <span class="label label-info">Windows</span>
 	</dd>
 	<dt>Language</dt>
 	<dd>
