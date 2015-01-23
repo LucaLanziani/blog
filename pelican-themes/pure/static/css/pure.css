@@ -347,6 +347,10 @@ pre {
         padding-top: 0;
     }
 
+    .cover-body-top {
+        padding-bottom: 5%;
+    }
+
     .header,
     .header-article {
         text-align: center;
