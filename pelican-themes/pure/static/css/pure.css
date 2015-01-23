@@ -65,6 +65,14 @@ pre {
     background-image: linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
 }
 
+.cover-body-top {
+    position: absolute;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+}
+
 .brand-title,
 .brand-tagline {
     margin: 0;
@@ -141,7 +149,7 @@ pre {
     margin-left: 15px;
     margin-top: -15px;
     line-height: 15px;
-    font-size: 80%;
+    font-size: 90%;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     color: #fff;
 }
@@ -164,6 +172,10 @@ pre {
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     text-decoration: none;
     color: #fff;
+}
+
+.links a i {
+    font-size: 12px;
 }
 
 .content-subhead {
