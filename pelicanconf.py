@@ -6,7 +6,7 @@ from pelican.settings import DEFAULT_CONFIG
 
 AUTHOR = u'Luca Lanziani'
 SITENAME = u'Luca Lanziani'
-SITEURL = 'http://127.0.0.1'
+SITEURL = 'http://0.0.0.0'
 
 PATH = 'content'
 
@@ -66,13 +66,14 @@ TAGLINE = ('Software engineer, linux addict, '
            'hacker as http://bit.ly/hacker_def, '
            'InnovAction Lab alumnus')
 
-TAGLINE_HTML = ('Software engineer, linux addict, '
-                'hacker as <a href="http://bit.ly/hacker_def">'
-                'hacker_def</a>, '
-                '<a href="http://www.innovactionlab.org/">InnovAction Lab</a> '
-                'alumnus')
+TAGLINE_HTML = (
+  'Software engineer, GNU/Linux addict, '
+  '<a href="http://www.innovactionlab.org/"><i class="fa fa-link"></i></a>'
+  'InnovAction Lab alumnus')
 
-MENUITEMS = (('Experience', 'pages/experience.html'),)
+MENUITEMS = (('About', ''),
+             ('Experience', 'pages/experience.html'),
+             ('Blog', 'blog/'))
 
 
 BLOG_PREFIX = 'blog/'
