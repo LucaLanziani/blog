@@ -33,7 +33,7 @@ And parse and use it with a single line:
 		args = docopt(__doc__)
 		print(args)
 
-Now you just need to call the script the script as `./test.py . --log-level=3` and it will print out a dictionary containing the options:
+Now you just need to call the script as `./test.py . --log-level=3` and it will print out a dictionary containing the options:
 
 	:::python
 	{
