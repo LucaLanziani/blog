@@ -76,7 +76,16 @@ MENUITEMS = (('About', ''),
              ('Blog', 'blog/'))
 
 
+STATIC_PATHS = ['data']
+
+#
+# Move content around
+# All the blog related contents are created inside blog/ subdirectory
+# the pages are outside the blog subfolder inside the pages/ directory
+#
+
 BLOG_PREFIX = 'blog/'
+
 module = sys.modules[__name__]
 # ENTITIES_SETTING
 for entity in ['tag', 'category', 'author', 'article', 'draft']:
