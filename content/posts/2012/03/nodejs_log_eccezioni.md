@@ -6,7 +6,7 @@ Email: luca@lanziani.com
 Series: NodeInPillole
 Lang: it
 
-Nella pillola precedente [(uncaught exception)][1] abbiamo visto come evitare interruzioni inaspettate del servizio.
+Nella pillola precedente [(uncaught exception)]({filename}/posts/2012/03/nodejs_uncaughtExceptions.md) abbiamo visto come evitare interruzioni inaspettate del servizio.
 
 E’ opportuno tenere un log di questi eventi in modo da correggere gli errori che li hanno scatenati, sostituendo il console.log dell’esempio precedente con qualcosa di simile a:
 
@@ -20,5 +20,3 @@ Unix tip:
 
 	:::bash
 	node app.js 2> error.log
-
-[1]: /ita-nodejs-uncaught-exceptions.html
