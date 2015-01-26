@@ -4,13 +4,20 @@ Email: luca@lanziani.com
 URL:
 save_as: index.html
 
+## Welcome
+
 Hi there, I'm Luca (Nss) Lanziani, a software engineer currently based in Rome, and this is my personal page.
 
 Here you can find some information about me as my previous [experience](pages/experience.html) and some of the [blog](blog/) posts I wrote (hopefully I'll write something) during this years.
 
-Here a short recap of my last experience: __Betting platform__ as Software Engineer and DevOps (Python / Javascript), sync and backup multi-platform client (Python / wx), Web Components Platform (HTML5, Javascript, css), plugin systems and communication bus on Linux Embedded (C / libdl / pubsub).
+Here a short recap of my last experience:
 
-And a list of my current skills
+* __Betting platform__ Software Engineer and DevOps (Python / Javascript),
+* __FileRock__ Sync and backup multi-platform client (Python / wx)
+* __Web Components Platform__ (HTML5, Javascript, css)
+* __Linux Robot plaftform__ plugin systems and communication bus (C / libdl / pubsub).
+
+And a list of my current skills:
 
 <dl class="dl-horizontal">
 	<dt>Os</dt>
