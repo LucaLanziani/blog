@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodejsInto
+Lang: it
 
 Avevo promesso un video di approfondimento su express ma ho preferito prima presentare due strumenti che potranno esserci molto utili durante lo sviluppo.
 

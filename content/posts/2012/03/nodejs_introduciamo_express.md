@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 In questo video introdurremo in breve il web framework [express](http://expressjs.com/2x/):
 

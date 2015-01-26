@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 Nella pillola precedente [(uncaught exception)][1] abbiamo visto come evitare interruzioni inaspettate del servizio.
 

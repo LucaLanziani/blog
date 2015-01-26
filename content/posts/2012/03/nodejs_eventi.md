@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 Abbiamo citato il fatto che un punto di forza di nodejs è dato dal suo essere guidato da eventi.
 Vediamo quindi come agganciare una callback agli eventi.

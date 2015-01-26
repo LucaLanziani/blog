@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 Una breve introduzione ai middleware di expressjs, è possibile consultare la documentazione ufficiale su [http://expressjs.com/2x/guide.html#middleware](http://expressjs.com/2x/guide.html#middleware)
 

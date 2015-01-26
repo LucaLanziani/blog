@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 * Quali sono le particolarità di Redis?
 * Quando conviene usarlo?

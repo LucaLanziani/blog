@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 Leggiamo il contenuto dei file presenti in una specifica directory,  tramite il [modulo fs][1],   ed inviamolo al client.
 

@@ -4,6 +4,7 @@ Category: Tutorial
 Tags: Nodejs, it
 Email: luca@lanziani.com
 Series: NodeInPillole
+Lang: it
 
 In questo episodio vediamo come rispondere coerentemente ad una richiesta del client.
 
