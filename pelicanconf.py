@@ -76,7 +76,7 @@ MENUITEMS = (('About', ''),
              ('Blog', 'blog/'))
 
 
-STATIC_PATHS = ['data']
+STATIC_PATHS = ['data'] + DEFAULT_CONFIG['STATIC_PATHS']
 
 #
 # Move content around
