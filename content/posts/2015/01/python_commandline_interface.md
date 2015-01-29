@@ -1,7 +1,7 @@
 Title: Python - command line interface
 Date: 2015-01-05 18:45
 Category: Python
-Tags: Python, tips, docopt
+Tags: Python, tips, docopt, libraries
 Email: luca@lanziani.com
 
 How to write a better command line interface with python...
