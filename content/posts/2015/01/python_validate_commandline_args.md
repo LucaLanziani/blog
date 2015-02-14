@@ -4,7 +4,7 @@ Category: Python
 Tags: Python, tips, docopt, Schema, libraries
 Email: luca@lanziani.com
 
-Ok, in the last article I shown you a [tool][1] to write a nice command line interface, but it doesn't help you on validation.
+Ok, in the last article I've shown you a [tool][1] to write a nice command line interface, but it doesn't help you on validation.
 
 	:::python
 	try:
