@@ -12,7 +12,7 @@ Ok, in the last article I shown you a [tool][1] to write a nice command line int
 	except ValueError:
 		raise ArgsError('--log-level has to be a valid integer')
 
-Manual validation? There is a much better way, [Schema][2].
+Manual validation? There is a much better way to do it, using [Schema][2].
 
 > **schema** is a library for validating Python data structures, such as those obtained from config-files, forms, external services or command-line parsing, converted from JSON/YAML (or something else) to Python data-types.
 
