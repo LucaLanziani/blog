@@ -30,7 +30,8 @@ For a while I had no signature on my email then I started to add a simple "Luca 
   </tbody>
 </table>
 
-It is a simple html table with some inline css
+It is __a simple html table__ with some inline css
+
 ## Code
 
 	:::html
@@ -60,5 +61,4 @@ It is a simple html table with some inline css
 
 I find this format quite flexible, it maintains a good alignment thanks to the table, and the colors are not too shiny nor gloomy.
 
-I'm writing this to store my signature somewhere :D.
-Feel free to copy the layout, if you like it.
+I'm writing this to store my signature somewhere but feel free to copy the layout, if you like it ;).
