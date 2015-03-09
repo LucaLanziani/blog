@@ -25,4 +25,4 @@ To solve this problem and let the script terminate on the first `CTRL^C` you can
 
 Trap will execute the command specified when one of the signal is fired, for more information `man trap`
 
-Enjoy you bash scripting ;).
+Enjoy your bash scripting ;).
