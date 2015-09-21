@@ -3,9 +3,8 @@ Date: 2012-03-30 18:45
 Email: luca@lanziani.com
 URL:
 save_as: index.html
-
-## Welcome
-
+<img width="40%" src="/images/profile.jpg" alt="me" class="center-block img-responsive img-circle">
+<hr>
 Hi there, I'm Luca (Nss) Lanziani, a software engineer currently based in Rome, and this is my personal page.
 
 Here you can find some information about me as my previous [experience](pages/experience.html) and some of the [blog](blog/) posts I wrote (hopefully I'll write something) during this years.
