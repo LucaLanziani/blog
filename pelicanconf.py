@@ -6,7 +6,7 @@ from pelican.settings import DEFAULT_CONFIG
 
 AUTHOR = u'Luca Lanziani'
 SITENAME = u'Luca Lanziani'
-SITEURL = 'http://0.0.0.0'
+SITEURL = 'http://127.0.0.1:8000/'
 
 PATH = 'content'
 
@@ -40,7 +40,6 @@ SOCIAL = (('github', 'https://github.com/Nss'),
           ('envelope', 'mailto:luca.lanziani+site@gmail.com'),)
 
 DEFAULT_PAGINATION = 3
-
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
