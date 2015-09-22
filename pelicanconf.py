@@ -28,7 +28,7 @@ PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['gravatar', 'series', 'sitemap', 'related_posts', 'neighbors',
            'liquid_tags.img', 'liquid_tags.video', 'liquid_tags.youtube',
            'liquid_tags.vimeo', 'liquid_tags.include_code',
-           'liquid_tags.notebook', 'pelican_gist']
+           'liquid_tags.notebook', 'pelican_gist', 'share_post']
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),)
