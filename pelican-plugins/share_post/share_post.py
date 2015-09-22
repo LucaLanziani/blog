@@ -12,6 +12,7 @@ try:
 except ImportError:
     from urllib import quote
 from pelican import signals, contents
+from pelican.generators import ArticlesGenerator
 
 
 def article_title(content):
@@ -54,6 +55,17 @@ def share_post(content):
                    }
     content.share_post = share_links
 
+def run_plugin(generators):
+    for generator in generators:
+        if isinstance(generator, ArticlesGenerator):
+            for article in generator.articles:
+                share_post(article)
+
 
 def register():
-    signals.content_object_init.connect(share_post)
+    try:
+        signals.all_generators_finalized.connect(run_plugin)
+    except AttributeError:
+        # NOTE: This may result in #314 so shouldn't really be relied on
+        # https://github.com/getpelican/pelican-plugins/issues/314
+        signals.content_object_init.connect(share_post)
