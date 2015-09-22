@@ -4,6 +4,7 @@ branches:
   - master
 install:
 - pip install pelican ghp-import markdown pelican_gist
+- pip install -r requirements.txt 
 script:
 - make travis_github_user_pages
 env:
