@@ -4,10 +4,19 @@ Email: luca@lanziani.com
 
 <section>
   <h4 class="bs-title">
+    <span>Software Engineer <small>at</small> <a href="http://www.nearform.com" >nearForm</a> <span class="pull-right"><small style="white-space:nowrap;">02/2015 - now</small></span></span>
+  </h4>
+  <div class="bs-callout">
+    <p>nearFrom is largest global Node.js consultancy company. I'm working as a <strong>remote consultant</strong>, helping nearForm clients through all the software process, from the design to the developing, from the deployment to the system infrastructure design. Being a remote worker I'm able to self-manage and complete tasks without need of supervision.</p>
+  </div>
+</section>
+
+<section>
+  <h4 class="bs-title">
     <span>Software Engineer <small>at</small> <a href="https://www.smarkets.com" >Smarkets</a> <span class="pull-right"><small style="white-space:nowrap;">11/2013 - 12/2014</small></span></span>
   </h4>
   <div class="bs-callout">
-    <p>Smarkets is a betting exchange for trading sports, politics and entertainment events. I'm currently working on the backend side using Python. This experience is giving me the possibility to work in a complete production environment, using various technologies such as <em>Vagrant</em>, <em>Jenkins</em>, <em>RabbitMQ</em> and <em>Sentry</em> and practices as <em>Scrum</em> and <em>CI</em>.</p>
+    <p>Smarkets is a betting exchange for trading sports, politics and entertainment events. I've worked on the backend side using <strong>Python</strong> and as <strong>DevOps</strong> managing the whole infrastructure. This experience gave me the possibility to work in a complete production environment, using various technologies such as <em>Vagrant</em>, <em>Jenkins</em>, <em>RabbitMQ</em> and <em>Sentry</em> and practices as <em>Scrum</em> and <em>CI</em>.</p>
   </div>
 </section>
 
@@ -58,4 +67,3 @@ Email: luca@lanziani.com
 <p>Tulug organizes many events every year and we have been meeting since 2006 every week for spread our knowledge and help inexperienced users.</p>
   </div>
 </section>
-
