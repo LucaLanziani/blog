@@ -7,7 +7,7 @@ Email: luca@lanziani.com
     <span>Software Engineer <small>at</small> <a href="http://www.nearform.com" >nearForm</a> <span class="pull-right"><small style="white-space:nowrap;">02/2015 - now</small></span></span>
   </h4>
   <div class="bs-callout">
-    <p>nearFrom is largest global Node.js consultancy company. I'm working as a <strong>remote consultant</strong>, helping nearForm clients through all the software process, from the design to the developing, from the deployment to the system infrastructure design. Being a remote worker I'm able to self-manage and complete tasks without need of supervision.</p>
+    <p>nearFrom is the largest global Node.js consultancy company. I'm working as a <strong>remote consultant</strong>, helping nearForm clients through all the software process, from the design to the developing, from the deployment to the system infrastructure design. Being a remote worker I'm able to self-manage and complete tasks without supervision.</p>
   </div>
 </section>
 
