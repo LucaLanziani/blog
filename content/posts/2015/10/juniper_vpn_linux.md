@@ -7,7 +7,7 @@ Email: luca@lanziani.com
 
 Are you running a 64bit linux flavor and you are having problem to connect to a Juniper vpn system, even using a 32bit firefox with a 32bit jre plugin as many online pages suggest?
 
-I have the solution of you, it is [openconnect][1]:
+I have the solution for you, it is [openconnect][1]:
 
 ```
 sudo openconnect --juniper https://endpoint
