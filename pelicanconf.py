@@ -75,7 +75,8 @@ MENUITEMS = (('About', ''),
              ('Blog', 'blog/'))
 
 
-STATIC_PATHS = ['data'] + DEFAULT_CONFIG['STATIC_PATHS']
+STATIC_PATHS = ['data', 'extra/CNAME'] + DEFAULT_CONFIG['STATIC_PATHS']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 #
 # Move content around
