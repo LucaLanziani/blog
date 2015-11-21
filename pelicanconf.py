@@ -34,7 +34,7 @@ PLUGINS = ['gravatar', 'series', 'sitemap', 'related_posts', 'neighbors',
 LINKS = (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/Nss'),
+SOCIAL = (('github', 'https://github.com/LucaLanziani'),
           ('twitter', 'http://twitter.com/_Nss_'),
           ('linkedin', 'http://uk.linkedin.com/in/lucalanziani/'),
           ('envelope', 'mailto:luca.lanziani+site@gmail.com'),)
