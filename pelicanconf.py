@@ -35,7 +35,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/LucaLanziani'),
-          ('twitter', 'http://twitter.com/_Nss_'),
+          ('twitter', 'http://twitter.com/lucalanziani'),
           ('linkedin', 'http://uk.linkedin.com/in/lucalanziani/'),
           ('envelope', 'mailto:luca.lanziani+site@gmail.com'),)
 
