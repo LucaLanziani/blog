@@ -1,7 +1,6 @@
 Title: Browser as notepad
 Date: 2016-01-18  9:49
 Category: tricks
-Status: draft
 Tags: tips, internet
 Email: luca@lanziani.com
 
