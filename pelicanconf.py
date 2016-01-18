@@ -78,8 +78,7 @@ MENUITEMS = (('About', ''),
 STATIC_PATHS = ['data', 'extra/CNAME', 'extra/favicon.ico'] + DEFAULT_CONFIG['STATIC_PATHS']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},
-    'extra/google52cf50cb05384fd1.html': {'path': 'google52cf50cb05384fd1.html'}
+    'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
 #
