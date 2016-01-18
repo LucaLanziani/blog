@@ -20,12 +20,13 @@ mkdir -p "../$FOLDER"
 
 SECONDSFROMEPOC=$(date +%s)
 TITLE=$@
-if [ -z "$@" ];
+if [ "$TITLE" == "" ];
 then
   TITLE=$SECONDSFROMEPOC
 fi
 
-POST_FILE="$FOLDER/$SECONDSFROMEPOC.md"
+FILENAME=$(echo "$TITLE" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z)
+POST_FILE="$FOLDER/$FILENAME.md"
 
 cat > "../$POST_FILE" << EOF
 Title: $TITLE
