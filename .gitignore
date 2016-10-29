@@ -63,3 +63,5 @@ target/
 # Profiler
 *.py.lprof
 
+# Pid file
+*.pid
