@@ -13,10 +13,10 @@ Here you can find some information about me as my previous [experience](pages/ex
 
 Here a short recap of my last experience:
 
-* __nearForm__ Javascript and microservices consultant (Javascript/ Nodejs)
-* __Betting platform__ Software Engineer and DevOps (Python / Javascript),
+* __nearForm__ JavaScript and microservices consultant (JavaScript/ Nodejs)
+* __Betting platform__ Software Engineer and DevOps (Python / JavaScript),
 * __FileRock__ Sync and backup multi-platform client (Python / wx)
-* __Web Components Platform__ Software engineer (HTML5, Javascript, css)
+* __Web Components Platform__ Software engineer (HTML5, JavaScript, css)
 * __Linux Robot plaftform__ plugin systems and communication bus (C / libdl / pubsub).
 
 And a list of my current skills:
@@ -30,7 +30,7 @@ And a list of my current skills:
   <dt>Language</dt>
   <dd>
     <span class="label label-default">Python</span>
-    <span class="label label-default">Javascript</span>
+    <span class="label label-default">JavaScript</span>
     <span class="label label-default">C</span>
     <span class="label label-default">Ruby</span>
   </dd>

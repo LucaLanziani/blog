@@ -27,7 +27,7 @@ Email: luca@lanziani.com
   <div class="bs-callout">
     <p>FileRock is a secure, backup and synchronization service. I mainly worked on the <strong>Open Source</strong> <a href="https://github.com/Nss/FileRock-Client" title="FileRock-Client">client</a>, a multi-platform software that encrypt and sync data in the cloud completely written in <strong>Python</strong>.</p>
 
-<p>In the last months I worked on a new web interface completely written in HTML5 and <strong>Javascript</strong> as a single page application (SPA), using <strong>Angularjs</strong> framework. I used <strong>PhoneGap</strong> framework to bring this implementation on mobile devices.</p>
+<p>In the last months I worked on a new web interface completely written in HTML5 and <strong>JavaScript</strong> as a single page application (SPA), using <strong>Angularjs</strong> framework. I used <strong>PhoneGap</strong> framework to bring this implementation on mobile devices.</p>
   </div>
 </section>
 
@@ -40,7 +40,7 @@ Email: luca@lanziani.com
 
 <p>In our vision, in the near future, every application will run in a browser with a composition of API and HTML5 Interface. Grapily wants to give a way to compose, fast and simply, this kind of applications.</p>
 
-<p>Hoping to create something by myself, I stopped too early by a series of "problems". Every fail, is a lesson. This experience introduced me to HTML5, Javascript (client-side/ server-side), startups world, team building...</p>
+<p>Hoping to create something by myself, I stopped too early by a series of "problems". Every fail, is a lesson. This experience introduced me to HTML5, JavaScript (client-side/ server-side), startups world, team building...</p>
   </div>
 </section>
 
