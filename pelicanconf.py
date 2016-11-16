@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import sys
 from pelican.settings import DEFAULT_CONFIG
 
+
 AUTHOR = u'Luca Lanziani'
 SITENAME = u'Luca Lanziani'
 SITEURL = 'http://127.0.0.1:8000'
