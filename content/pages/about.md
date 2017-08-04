@@ -9,9 +9,9 @@ save_as: index.html
 
 Hi there, I'm Luca (Nss) Lanziani, a software engineer currently based in Rome, and this is my personal page.
 
-Here you can find some information about me as my previous [experience](pages/experience.html) and some of the [blog](blog/) posts I wrote (hopefully I'll write something) during this years.
+Here you can find some information about me, some of my previous [experience](pages/experience.html) and some of the [blog](blog/) posts I wrote (hopefully I'll write something) during these years.
 
-Here a short recap of my last experience:
+Here is a short recap of my last experience:
 
 * __nearForm__ JavaScript and microservices consultant (JavaScript/ Nodejs)
 * __Betting platform__ Software Engineer and DevOps (Python / JavaScript),
