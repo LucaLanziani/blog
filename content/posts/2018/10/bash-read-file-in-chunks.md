@@ -7,7 +7,7 @@ Email: luca@lanziani.com
 How to read a file in chunks.
 You can optionally specify the starting point and the chunk size.
 
-```
+```bash
 #!/bin/bash
 
 function read_file_in_chunks { # FILENAME [START_FROM_LINE] [CHUNK_SIZE]
