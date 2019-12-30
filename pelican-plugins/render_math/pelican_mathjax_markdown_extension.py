@@ -125,31 +125,34 @@ class PelicanMathJaxExtension(markdown.Extension):
             # Needed for markdown versions >= 2.5
             self.config['mathjax_script'] = ['', 'Mathjax JavaScript script']
             self.config['math_tag_class'] = ['math', 'The class of the tag in which mathematics is wrapped']
+            self.config['auto_insert'] = [True, 'Determines if mathjax script is automatically inserted into content']
             super(PelicanMathJaxExtension,self).__init__(**config)
         except AttributeError:
             # Markdown versions < 2.5
             config['mathjax_script'] = [config['mathjax_script'], 'Mathjax JavaScript script']
             config['math_tag_class'] = [config['math_tag_class'], 'The class of the tag in which mathematic is wrapped']
+            config['auto_insert'] = [config['auto_insert'], 'Determines if mathjax script is automatically inserted into content']
             super(PelicanMathJaxExtension,self).__init__(config)
 
         # Used as a flag to determine if javascript
         # needs to be injected into a document
         self.mathjax_needed = False
 
-    def extendMarkdown(self, md, md_globals):
+    def extendMarkdown(self, md):
         # Regex to detect mathjax
         mathjax_inline_regex = r'(?P<prefix>\$)(?P<math>.+?)(?P<suffix>(?<!\s)\2)'
         mathjax_display_regex = r'(?P<prefix>\$\$|\\begin\{(.+?)\})(?P<math>.+?)(?P<suffix>\2|\\end\{\3\})'
 
         # Process mathjax before escapes are processed since escape processing will
         # intefer with mathjax. The order in which the displayed and inlined math
-        # is registered below matters
-        md.inlinePatterns.add('mathjax_displayed', PelicanMathJaxPattern(self, 'div', mathjax_display_regex), '<escape')
-        md.inlinePatterns.add('mathjax_inlined', PelicanMathJaxPattern(self, 'span', mathjax_inline_regex), '<escape')
+        # is registered below matters: we should have higher priority than 'escape' which has 180
+        md.inlinePatterns.register(PelicanMathJaxPattern(self, 'div', mathjax_display_regex), 'mathjax_displayed', 186)
+        md.inlinePatterns.register(PelicanMathJaxPattern(self, 'span', mathjax_inline_regex), 'mathjax_inlined', 185)
 
         # Correct the invalid HTML that results from teh displayed math (<div> tag within a <p> tag) 
-        md.treeprocessors.add('mathjax_correctdisplayedmath', PelicanMathJaxCorrectDisplayMath(self), '>inline')
+        md.treeprocessors.register(PelicanMathJaxCorrectDisplayMath(self), 'mathjax_correctdisplayedmath', 15)
 
         # If necessary, add the JavaScript Mathjax library to the document. This must
         # be last in the ordered dict (hence it is given the position '_end')
-        md.treeprocessors.add('mathjax_addjavascript', PelicanMathJaxAddJavaScript(self), '_end')
+        if self.getConfig('auto_insert'):
+            md.treeprocessors.register(PelicanMathJaxAddJavaScript(self), 'mathjax_addjavascript', 0)

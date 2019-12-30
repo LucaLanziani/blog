@@ -32,7 +32,10 @@ except ImportError:
 def add_jinja2_ext(pelican):
     """Add Webassets to Jinja2 extensions in Pelican settings."""
 
-    pelican.settings['JINJA_EXTENSIONS'].append(AssetsExtension)
+    if 'JINJA_ENVIRONMENT' in pelican.settings: # pelican 3.7+
+        pelican.settings['JINJA_ENVIRONMENT']['extensions'].append(AssetsExtension)
+    else:
+        pelican.settings['JINJA_EXTENSIONS'].append(AssetsExtension)
 
 
 def create_assets_env(generator):
@@ -51,7 +54,9 @@ def create_assets_env(generator):
         for name, args, kwargs in generator.settings['ASSET_BUNDLES']:
             generator.env.assets_environment.register(name, *args, **kwargs)
 
-    if logging.getLevelName(logger.getEffectiveLevel()) == "DEBUG":
+    if 'ASSET_DEBUG' in generator.settings:
+        generator.env.assets_environment.debug = generator.settings['ASSET_DEBUG']
+    elif logging.getLevelName(logger.getEffectiveLevel()) == "DEBUG":
         generator.env.assets_environment.debug = True
 
     for path in (generator.settings['THEME_STATIC_PATHS'] +
