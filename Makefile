@@ -81,24 +81,9 @@ github: publish
 
 .PHONY: html help clean regenerate serve serve-global devserver publish github
 
-github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
-
-travis_github: publish
-ifeq ($(TRAVIS_PULL_REQUEST), false)
-	ghp-import -n $(OUTPUTDIR)
-	git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
-endif
-
 travis_github_user_pages: publish
-ifeq ($(TRAVIS_PULL_REQUEST), false)
 	ghp-import -n $(OUTPUTDIR)
 	git push -fq https://${GH_TOKEN}@github.com/lucalanziani/lucalanziani.github.io.git gh-pages:master > /dev/null
-endif
-
-
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
 
 ENV: Makefile
 	virtualenv ./env
