@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import sys
 from pelican.settings import DEFAULT_CONFIG
 
 
@@ -79,3 +80,20 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
+
+USE_FOLDER_AS_CATEGORY = True
+
+ARTICLE_URL = f'blog/{DEFAULT_CONFIG["ARTICLE_URL"]}'
+ARTICLE_SAVE_AS = f'blog/{DEFAULT_CONFIG["ARTICLE_SAVE_AS"]}'
+
+TAG_URL = f'blog/{DEFAULT_CONFIG["TAG_URL"]}'
+TAG_SAVE_AS = f'blog/{DEFAULT_CONFIG["TAG_SAVE_AS"]}'
+
+CATEGORY_URL = f'blog/{DEFAULT_CONFIG["CATEGORY_URL"]}'
+CATEGORY_SAVE_AS = f'blog/{DEFAULT_CONFIG["CATEGORY_SAVE_AS"]}'
+
+AUTHOR_URL = f'blog/{DEFAULT_CONFIG["AUTHOR_URL"]}'
+AUTHOR_SAVE_AS = f'blog/{DEFAULT_CONFIG["AUTHOR_SAVE_AS"]}'
+
+DRAFT_URL = f'blog/{DEFAULT_CONFIG["DRAFT_URL"]}'
+DRAFT_SAVE_AS = f'blog/{DEFAULT_CONFIG["DRAFT_SAVE_AS"]}'
