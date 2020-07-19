@@ -72,7 +72,7 @@ TAGLINE_HTML = (
 
 MENUITEMS = (('About', ''),
              ('Experience', 'pages/experience.html'),
-             ('Blog', 'blog/'))
+             ('Blog', 'blog/index.html'))
 
 
 STATIC_PATHS = ['data', 'extra/CNAME', 'extra/favicon.ico'] + DEFAULT_CONFIG['STATIC_PATHS']
