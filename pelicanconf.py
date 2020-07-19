@@ -97,3 +97,9 @@ AUTHOR_SAVE_AS = f'blog/{DEFAULT_CONFIG["AUTHOR_SAVE_AS"]}'
 
 DRAFT_URL = f'blog/{DEFAULT_CONFIG["DRAFT_URL"]}'
 DRAFT_SAVE_AS = f'blog/{DEFAULT_CONFIG["DRAFT_SAVE_AS"]}'
+
+INDEX_SAVE_AS = f'blog/index.html'
+TAGS_SAVE_AS = f'blog/tags.html'
+CATEGORIES_SAVE_AS = f'blog/categories.html'
+AUTHORS_SAVE_AS = f'blog/authors.html'
+ARCHIVES_SAVE_AS = f'blog/archives.html'
