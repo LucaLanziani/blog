@@ -83,7 +83,7 @@ github: publish
 
 travis_github_user_pages: publish
 	ghp-import -n $(OUTPUTDIR)
-	git push -fq https://${GH_TOKEN}@github.com/lucalanziani/lucalanziani.github.io.git gh-pages:master > /dev/null
+	git push -fq https://${GH_TOKEN}@github.com/LucaLanziani/lucalanziani.github.io.git gh-pages:master > /dev/null
 
 ENV: Makefile
 	virtualenv ./env
