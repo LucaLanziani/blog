@@ -134,10 +134,13 @@ pre {
     max-width: 100%;
 }
 
+.brand-main {
+    margin-left: 15px;
+}
+
 .brand-main a {
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 15px;
     font-size: 25px;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -372,6 +375,25 @@ pre {
 @media (max-width: 480px) {
     .cover-img {
         background-position: 0;
+    }
+    .header .links {
+        display: inline
+    }
+
+    .sidebar {
+        height: 230px;
+    }
+
+    .pure-g-r img {
+        display: none;
+    }
+
+    .content hr {
+        display: none;
+    }
+
+    .content {
+        font-size: 95%;
     }
 }
 
