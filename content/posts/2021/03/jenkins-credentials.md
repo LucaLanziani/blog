@@ -12,27 +12,23 @@ Get to `https://jenkins-url.com/script` and paste the code below:
 import org.jenkinsci.plugins.plaincredentials.impl.*;
 import com.cloudbees.plugins.credentials.impl.*;
 
-credIds = [ "credId1", "credId2" ];
+credIds = [ "secret", "username_id" ];
 
 (com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(
     StringCredentialsImpl.class,
-    Jenkins.getInstance(),
-    null,
-    null
+    Jenkins.getInstance()
 ) + com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(
     UsernamePasswordCredentialsImpl.class,
-    Jenkins.getInstance(),
-    null,
-    null
+    Jenkins.getInstance()
 )).each {
-  print "credId: ${it.id} => " 
+  print "credId: ${it.id} => ";
   if (it.id in credIds) {
     if (it.metaClass.respondsTo(it, 'getSecret')) {
-    	print it.getSecret();
+        print it.getSecret();
     }
-    
- 	if (it.metaClass.respondsTo(it, 'getPassword')) {
-    	print it.getPassword();
+
+    if (it.metaClass.respondsTo(it, 'getPassword')) {
+        print it.getPassword();
     }
   }
   println "";
