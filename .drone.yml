@@ -1,0 +1,7 @@
+kind: pipeline
+
+steps:
+  - name: test
+    image: apline:lts
+    commands:
+      - echo "Hello World"
